@@ -9,7 +9,7 @@
 			"network": "ws",
 			"security": "auto",
 			"wsSettings": {
-				"path": "/mygps"
+				"path": "/elecV2"
 			}
 		}
 	},
