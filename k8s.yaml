@@ -12,7 +12,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: v2ku
-          image: winder9090/mygps
+          image: winder9090/test
           ports:
             - containerPort: 8251
             
