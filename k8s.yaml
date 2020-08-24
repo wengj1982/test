@@ -1,13 +1,13 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: elecv2
+  name: test
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: elecv2
+        app: test
     spec:
       restartPolicy: Always
       containers:
@@ -29,4 +29,4 @@ spec:
   - name: "v2kurl"
     port: 8251
   selector:
-    app: elecv2
+    app: test
