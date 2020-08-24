@@ -7,7 +7,7 @@ spec:
   template:
     metadata:
       labels:
-        app: mygps
+        app: elecv2
     spec:
       restartPolicy: Always
       containers:
