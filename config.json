@@ -1,0 +1,23 @@
+{
+	"inbound": {
+		"port": "8251",
+		"protocol": "vmess",
+		"settings": {
+			"clients": [ {"id": "731e4f72-b2c6-432e-98cb-f41c740567d8",	"alterId": 16} ]
+		},
+		"streamSettings": {
+			"network": "ws",
+			"security": "auto",
+			"wsSettings": {
+				"path": "/mygps"
+			}
+		}
+	},
+	"outbound": {
+		"protocol": "freedom",
+		"settings": {}
+	},
+	"dns": {
+		"servers": [ "176.103.130.130", "8.8.8.8", "1.1.1.1", "114.114.114.114"	]
+	}
+}
