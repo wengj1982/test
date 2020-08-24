@@ -20,13 +20,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: v2kurl
+  name: test
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "v2kurl"
+  - name: "test"
     port: 8251
   selector:
     app: test
