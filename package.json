@@ -7,6 +7,6 @@
     "build": "chmod +x ./pre-run.sh && sh ./pre-run.sh",
     "start": "chmod +x ./run.sh ; sh ./run.sh"
   },
-  "author": "elecV2",
+  "author": "mygps",
   "license": "ISC"
 }
