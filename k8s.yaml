@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: elecv2
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mygps
+    spec:
+      restartPolicy: Always
+      containers:
+        - name: v2ku
+          image: winder9090/mygps
+          ports:
+            - containerPort: 8251
+            
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: v2kurl
+  annotations:
+    dev.okteto.com/auto-ingress: "true"
+spec:
+  type: ClusterIP  
+  ports:
+  - name: "v2kurl"
+    port: 8251
+  selector:
+    app: elecv2
