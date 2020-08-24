@@ -11,7 +11,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-        - name: v2ku
+        - name: test
           image: winder9090/test
           ports:
             - containerPort: 8251
